@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { DAppProvider, ChainId } from "@usedapp/core";
+import Header from "./components/Header"
+import Hero from "./components/Hero"
+import Data from "./Data"
+import Footer from "./components/Footer"
+import Main from "./components/Main"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const config = {
+    supportedChains: [ChainId.Rinkeby],
 }
 
-export default App;
+export default function App() {
+    const Heros = Data.map(item => (
+        <Hero
+            content={item.content}
+            images={item.images} 
+        />
+    ))
+
+    return (
+        <DAppProvider  config={config} className="container">
+            <Header />
+            <Main />
+            {Heros}
+            <Footer />
+        </DAppProvider>
+    );
+}
