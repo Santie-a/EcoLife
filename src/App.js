@@ -1,5 +1,6 @@
 import React from "react";
-import { DAppProvider, ChainId } from "@usedapp/core";
+import { Rinkeby, DAppProvider } from "@usedapp/core";
+import { getDefaultProvider } from 'ethers'
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Data from "./Data"
@@ -8,14 +9,18 @@ import Main from "./components/Main"
 
 
 const config = {
-    supportedChains: [ChainId.Rinkeby],
+    readOnlyChainId: Rinkeby.chainId,
+    readOnlyUrls: {
+    [Rinkeby.chainId]: getDefaultProvider('rinkeby'),
+  },
 }
 
 export default function App() {
     const Heros = Data.map(item => (
         <Hero
             content={item.content}
-            images={item.images} 
+            images={item.images}
+            key={item.key}
         />
     ))
 

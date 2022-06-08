@@ -2,9 +2,17 @@ import React from "react";
 
 export default function Footer() {
 	return (
-		<footer className="footer">
+        <>
             <hr className="footer--line"/>
-            <p className="white">Rights Reserved</p>
-        </footer>
+            <footer className="footer">
+                
+                <div className="footer--div">
+                    <p className="footer--text">Rights Reserved</p>
+                </div>
+                <div className="footer--div">
+                    <p className="footer--text">EcoLife 2022</p>
+                </div>
+            </footer>
+        </>
     )
 }
