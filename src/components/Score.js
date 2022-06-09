@@ -3,11 +3,11 @@ import Scores from "./Scores"
 import { useEthers } from "@usedapp/core";
 
 export default function Score() {
-    const { account, active } = useEthers();
+    const { account, active, chainId } = useEthers();
     const [ score, setScore ] = useState(0)
 
     function refresh(){
-        if (active) {
+        if (active && chainId === 4) {
             for (let i = 0; i < Scores.length; i++) {
                 if (Scores[i].address === account) {
                     setScore(Scores[i].amount)
@@ -26,7 +26,7 @@ export default function Score() {
                 <progress className="main--score-progress" id="score" max="500" value={score}>Score</progress>
                 <span className="main--score-numbers">500</span>
             </div>
-            <button className="main--button" onClick={refresh}>Actualizar</button>
+            <button className="main--button" style={{marginTop: "15px"}} onClick={refresh}>Actualizar</button>
 		</>
 	)
 }

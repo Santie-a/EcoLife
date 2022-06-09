@@ -8,7 +8,7 @@ export default function Main() {
     
     return (
 		<div className="main">
-            <h1>CONECTA TU WALLET:</h1>
+            <h1>CONECTA TU WALLET</h1>
             <Wallet />
             <h1>TU PUNTAJE</h1>
             <Score />

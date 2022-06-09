@@ -76,7 +76,6 @@ body {
 }
 
 .main--button {
-    margin-top: 10px;
     padding: 10px;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
@@ -98,6 +97,7 @@ body {
 .main>h1 {
     color: #fff;
     font-weight: lighter;
+    font-size: 28px;
 }
 
 .main--wallet:hover, .main--score:hover {
@@ -152,7 +152,7 @@ body {
 .footer--div {
     margin-left: auto;
     margin-right: auto;
-    padding: 5px 10px 5px 10px
+    margin-top: 0px;
 }
 
 .footer--text {
@@ -165,6 +165,8 @@ body {
 }
 
 .footer--line {
+    margin-top: 20px;
+    margin-bottom: 0px;
     border: 0.2px solid gray
 }
 
