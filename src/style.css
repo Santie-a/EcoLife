@@ -25,7 +25,7 @@ body {
     padding: 10px;
 }
 
-.footer--div, .header, .hero--image, .main--button, .main--wallet, .main--score {
+.header, .hero--image, .main--button, .main--wallet, .main--score {
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.438);
     border-radius: 15px;
 }
@@ -76,9 +76,10 @@ body {
 }
 
 .main--button {
+    margin-top: 10px;
     padding: 10px;
     font-family: 'Inter', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     background: none;
     cursor: pointer;
     border: 1px solid lightgray;
@@ -90,7 +91,7 @@ body {
     padding: 12px;
 }
 
-.footer--div, .main--button, .main--button:hover, .main--wallet, .main--score, .main--score:hover, .main--score-progress::-webkit-progress-value {
+.main--button, .main--button:hover, .main--wallet, .main--score, .main--score:hover, .main--score-progress::-webkit-progress-value {
     transition-duration: 500ms;
 }
 
@@ -115,7 +116,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 15px;
-    width: 70%;
+    width: 87%;
 }
 
 .main--score-numbers {
@@ -156,6 +157,11 @@ body {
 
 .footer--text {
     color: #fff;
+}
+
+.footer--text-s {
+    color: rgba(180, 180, 180, 0.979);
+    font-size: 10px;
 }
 
 .footer--line {

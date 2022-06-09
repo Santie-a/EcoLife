@@ -19,12 +19,14 @@ export default function Score() {
     }
 
 	return (
-		<div className="main--score">
-		<span className="main--score-numbers">0</span>
-		<label for="score"></label>
-		<progress className="main--score-progress" id="score" max="500" value={score}>Score</progress>
-		<span className="main--score-numbers">500</span>
-        <button className="main--button" onClick={refresh}>Actualizar</button>
-		</div>
+        <>
+            <div className="main--score">
+                <span className="main--score-numbers">0</span>
+                <label for="score"></label>
+                <progress className="main--score-progress" id="score" max="500" value={score}>Score</progress>
+                <span className="main--score-numbers">500</span>
+            </div>
+            <button className="main--button" onClick={refresh}>Actualizar</button>
+		</>
 	)
 }

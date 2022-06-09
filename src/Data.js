@@ -11,10 +11,10 @@ const Data = [
     },
     {
         images: [
-            {url: "https://i.imgur.com/LJnO42J.png"},
-            {url: "https://i.imgur.com/GvP5KTq.png"},
-            {url: "https://i.imgur.com/bmk1fR4.png"},
-            {url: "https://i.imgur.com/YOeaym0.png"}
+            {url: "https://i.imgur.com/exjKxU4.png"},
+            {url: "https://i.imgur.com/PBKGCJ0.png"},
+            {url: "https://i.imgur.com/ahZOf42.png"},
+            {url: "https://i.imgur.com/Xptmtop.png"}
         ],
         content: "Mision.png",
         key: "2"
