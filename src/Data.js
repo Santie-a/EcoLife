@@ -11,6 +11,16 @@ const Data = [
     },
     {
         images: [
+            {url: "https://i.imgur.com/NZKjlCA.png"},
+            {url: "https://i.imgur.com/SvMid46.png"},
+            {url: "https://i.imgur.com/DE4g8jG.png"},
+            {url: "https://i.imgur.com/Fv5mqDr.png"}
+        ],
+        content: "Vision.png",
+        key: "1"
+    },
+    {
+        images: [
             {url: "https://i.imgur.com/exjKxU4.png"},
             {url: "https://i.imgur.com/PBKGCJ0.png"},
             {url: "https://i.imgur.com/ahZOf42.png"},
@@ -19,16 +29,6 @@ const Data = [
         content: "Mision.png",
         key: "2"
     },
-    {
-        images: [
-            {url: "https://conceptoabc.com/wp-content/uploads/2021/09/Definicion-de-arquitectura.jpg"},
-            {url: "https://www.cronica.com.ar/__export/1593607594449/sites/cronica/img/2020/07/01/arquitecto_crop1593606739201.jpg_792575817.jpg"},
-            {url: "https://www.anahuac.mx/mexico/sites/default/files/noticias/El-Coronavirus-en-la-Arquitectura.jpg"},
-            {url: "https://www.rebuildexpo.com/app/uploads/sites/4/2019/05/evoluci%C3%B3n-de-la-arquitectura.jpg"}
-        ],
-        content: "Vision.png",
-        key: "1"
-    }
 ]
 
 export default Data
